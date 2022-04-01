@@ -5,7 +5,7 @@ if (num > 10):
     print("Esse número é maior que 10.")
 
 elif (num == 10):
-    print("Esse número é o número dez.")
+    print("Esse número é igual ao número dez.")
     
 else:
     print("Esse número é menor que 10.")
