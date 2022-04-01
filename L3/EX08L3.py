@@ -1,8 +1,10 @@
 #Escreva um algoritmo que recebe a idade de um nadador e mostra sua categoria.
 i=int(input("Digite a idade do nadador: "))
 
-if (i <= 7):
+if (i >= 5) and (i <= 7):
     print ("O nadador pertence a categoria: INFANTIL.")
+    if (i < 5): 
+        print ("Não existe uma categoria para essa idade.")
 
 elif (i <= 10):
     print ("O nadador pertence a categoria: JUVENIL.")
