@@ -1,6 +1,7 @@
 #input de dados
 d = int(input("Dia: "))
 m = int(input("Mês: "))
+a = int(input("Ano: "))
 valida = False
 
 #Meses com 31 dias
@@ -13,9 +14,14 @@ elif (m == 4 or m == 6 or m == 9 or m == 11):
         if (d <= 30):
                 valida = True
 
+#Fevereiro
 elif (m == 2):
-    if (d == 28):
-        valida = True
+    if (a % 400 == 0) or ((a % 4 == 0) and (a % 100 != 0)):
+        if (d <= 29):
+            valida = True
+            print ('Esse ano é bissexto')
+    elif (d <= 28):
+        valida = True        
 
 if(valida):
     print('Data válida')
