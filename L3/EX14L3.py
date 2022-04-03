@@ -16,14 +16,21 @@ elif (m == 4 or m == 6 or m == 9 or m == 11):
 
 #Fevereiro
 elif (m == 2):
-    if (a % 400 == 0) or ((a % 4 == 0) and (a % 100 != 0)):
+    if (a % 400 == 0) or ((a % 4 == 0) and (a % 100 != 0)): 
         if (d <= 29):
-            valida = True
             print ('Esse ano é bissexto')
+        valida = True 
     elif (d <= 28):
-        valida = True        
+        valida = True  
+
+
+if (a % 400 == 0) or ((a % 4 == 0) and (a % 100 != 0)):       
+    print ('Esse ano é bissexto')
+else:
+    print ('O ano não é bisssexto.')
+
 
 if(valida):
-    print('Data válida')
+    print('Essa data existe, seja feliz!')
 else:
-    print('Inválida')
+    print('Volte no tempo e crie uma data nova, pois essa não existe!')
